@@ -10,7 +10,7 @@ const auth = require("./routes/auth");
 app.use(cors());
 const io = new Server(server, {
   cors: {
-    origin: "https://chat-apps-server.onrender.com",
+    origin: "*",
     methods: ["GET", "POST"],
   },
 });
